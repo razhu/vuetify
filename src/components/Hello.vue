@@ -1,6 +1,76 @@
 <template>
   <div class="hello">
+
+<v-layout justify-space-around>
+    <v-icon large class="green--text text--darken-2">business</v-icon>
+
+    <v-icon large class="orange--text text--darken-2">chat</v-icon>
+
+    <v-icon large class="purple--text text--darken-2">dialpad</v-icon>
+
+    <v-icon large class="teal--text text--darken-2">email</v-icon>
+
+    <v-icon large class="blue-grey--text text--darken-2">call_split</v-icon>
+
+    <v-icon large class="orange--text text--darken-2">present_to_all</v-icon>
+  </v-layout>
+
+
+
+   <div class="text-xs-center">
+
+
+<v-chip class="primary white--text">Primary</v-chip>
+
+    <v-chip class="secondary white--text">Secondary</v-chip>
+
+    <v-chip class="red white--text">Colored Chip</v-chip>
+
+    <v-chip class="green white--text">Colored Chip</v-chip>
+
+    <v-chip class="indigo white--text">
+      <v-avatar>
+        <v-icon>account_circle</v-icon>
+      </v-avatar>
+      Ranee
+    </v-chip>
+
+    <v-chip class="orange white--text">
+      Premium
+      <v-icon right>star</v-icon>
+    </v-chip>
+
+    <v-chip class="primary white--text">
+      1 Year
+      <v-icon right>cake</v-icon>
+    </v-chip>
+
+    <v-chip class="green white--text">
+      <v-avatar class="green darken-4">1</v-avatar>
+      Years
+    </v-chip>
+
+    <v-chip close class="teal white--text">
+      <v-avatar>
+        <v-icon>check_circle</v-icon>
+      </v-avatar>
+      Confirmed
+    </v-chip>
+  </div>
     <div>
+        <v-layout justify-space-around>
+    <v-icon dark>home</v-icon>
+
+    <v-icon dark>event</v-icon>
+
+    <v-icon dark>info</v-icon>
+
+    <v-icon dark>folder_open</v-icon>
+
+    <v-icon dark>widgets</v-icon>
+
+    <v-icon dark>gavel</v-icon>
+  </v-layout>
       <v-layout row justify-center>
     <v-dialog v-model="dialog">
       <v-btn primary light slot="activator">Open Dialog</v-btn>
@@ -68,8 +138,6 @@ export default {
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 </style>
