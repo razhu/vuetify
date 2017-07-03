@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
 
-
+{{now}}
 
  <v-tabs id="mobile-tabs-3" grow light>
     <v-tabs-bar slot="activators">
@@ -85,7 +85,7 @@
 
 
 <v-layout justify-space-around>
-    <v-icon large class="green--text text--darken-2">business</v-icon>
+    <v-icon large class="green--text text--darken-2">sentiment_dissatisfied</v-icon>
 
     <v-icon large class="orange--text text--darken-2">chat</v-icon>
 
@@ -238,7 +238,12 @@ e6: [],
         this.users = users
       })
     }
+  },
+  computed: {
+  now: function () {
+    return Date.now()
   }
+}
 }
 </script>
 <style scoped>
